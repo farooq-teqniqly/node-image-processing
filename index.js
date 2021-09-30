@@ -24,8 +24,14 @@ const main = async () => {
 
   const blobName = `${uuidv4()}.jpg`;
   const blockBlobClient = containerClient.getBlockBlobClient(blobName);
-  const uploadBlobResponse = await blockBlobClient.uploadFile(
-    'sample_image_quality_50.jpg'
+
+  const buffer = await sharp('sample_image.jpg')
+    .jpeg({ quality: 50 })
+    .toBuffer();
+
+  const uploadBlobResponse = await blockBlobClient.upload(
+    buffer,
+    buffer.length
   );
 
   console.log(

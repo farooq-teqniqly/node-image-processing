@@ -1,0 +1,25 @@
+{
+  "name": "image-processing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farooq-teqniqly/node-image-processing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farooq-teqniqly/node-image-processing/issues"
+  },
+  "homepage": "https://github.com/farooq-teqniqly/node-image-processing#readme",
+  "dependencies": {
+    "sharp": "^0.29.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
